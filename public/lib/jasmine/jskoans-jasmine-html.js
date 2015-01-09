@@ -32,7 +32,7 @@ JsKoansReporter.prototype.createDom = function(type, attrs, childrenVarArgs) {
 };
 
 JsKoansReporter.prototype.reportRunnerStarting = function(runner) {
-  moduleName = moduleName || 'Javascript Koans';
+  var moduleName = moduleName || 'Javascript Koans';
   this.outerDiv = this.createDom('div', { className: 'jasmine_reporter show-passed' },
       this.createDom('h1', { }, moduleName),
       this.runnerDiv = this.createDom('div', { className: 'runner running' },
