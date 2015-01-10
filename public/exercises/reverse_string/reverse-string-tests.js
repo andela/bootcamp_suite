@@ -4,7 +4,7 @@ describe("Produce the reverse order of a word: ", function() {
   describe("Case for en empty string", function() {
 
     it("should return null for empty string", function() {
-      expect(findReverse('')).toEqual(null);
+      expect(reverseString('')).toEqual(null);
     });
 
   });
@@ -12,15 +12,15 @@ describe("Produce the reverse order of a word: ", function() {
   describe("Case for palindromes", function() {
 
     it("should return true for `anna`", function() {
-      expect(findReverse('anna')).toEqual(true);
+      expect(reverseString('anna')).toEqual(true);
     });
 
     it("should return true for `kayak`", function() {
-      expect(findReverse('kayak')).toEqual(true);
+      expect(reverseString('kayak')).toEqual(true);
     });
 
     it("should return true for `civic`", function() {
-      expect(findReverse('civic')).toEqual(true);
+      expect(reverseString('civic')).toEqual(true);
     });
 
   });
@@ -28,15 +28,15 @@ describe("Produce the reverse order of a word: ", function() {
   describe("Case for normal words", function() {
 
     it("should return `skoob` for `books`", function() {
-      expect(findReverse('books')).toEqual('skoob');
+      expect(reverseString('books')).toEqual('skoob');
     });
 
     it("should return `nomolos` for `solomon`", function() {
-      expect(findReverse('solomon')).toEqual('nomolos');
+      expect(reverseString('solomon')).toEqual('nomolos');
     });
 
     it("should return `csim` for `misc`", function() {
-      expect(findReverse('misc')).toEqual('csim');
+      expect(reverseString('misc')).toEqual('csim');
     });
 
   });
