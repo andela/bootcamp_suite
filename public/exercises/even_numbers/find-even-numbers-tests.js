@@ -1,5 +1,5 @@
 //We shall contemplate truth by testing reality, via spec expectations.
-describe("Find missing number two lists: ", function() {
+describe("Find even numbers in a lists: ", function() {
 
   describe("Case for en empty list", function() {
 
